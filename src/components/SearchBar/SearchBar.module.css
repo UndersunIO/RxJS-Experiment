@@ -1,0 +1,73 @@
+.searchBar {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 20%;
+  margin: 2rem auto;
+  padding: 2rem;
+  border-radius: 10px;
+  background: linear-gradient(
+    180deg,
+    rgba(58, 177, 161, 0.8) 0%,
+    rgba(5, 222, 234, 0.6) 100%
+  );
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.15));
+}
+
+#search-input {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  margin-bottom: 1rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+#search-input:focus {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  outline: none;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 0;
+  list-style-type: none;
+  margin-top: 1rem;
+}
+
+li {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  margin-bottom: 0.5rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #e6e6e6;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+li:hover {
+  background-color: #d4d4d4;
+}
+
+@media (max-width: 768px) {
+  .searchBar {
+    width: 70%;
+    padding: 1rem;
+  }
+
+  #search-input {
+    font-size: 14px;
+  }
+
+  li {
+    font-size: 14px;
+    width: 90%;
+  }
+}
